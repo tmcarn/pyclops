@@ -1,0 +1,2 @@
+[console_scripts]
+test_node = pyclop_controller.my_first_node:main
