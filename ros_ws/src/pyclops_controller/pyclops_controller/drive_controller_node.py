@@ -52,7 +52,7 @@ class DiffDriveController(Node):
         self.w_left = msg.data[0]
         self.w_right = msg.data[1]
 
-        self.compute_twist()
+        self.compute_twist() 
 
         self.T = self.T @ expm(dt * self.omega)
 
