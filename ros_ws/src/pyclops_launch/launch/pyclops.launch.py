@@ -1,8 +1,27 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
+from launch.substitutions import Command
+from launch_ros.parameter_descriptions import ParameterValue
+
+URDF_PATH = "robot_description/robot.urdf"
 
 def generate_launch_description():
     ld = LaunchDescription()
+
+    robot_description = ParameterValue(
+        Command(['cat ', URDF_PATH]),
+        value_type=str
+    )
+
+    state_publisher_node = Node(
+        package="robot_state_publisher",
+        executable="robot_state_publisher",
+        output="screen",
+        parameters=[{
+            'robot_description': robot_description
+            }]
+    )
+    ld.add_action(state_publisher_node)
 
     key_input_node = Node(
         package="teleop_twist_keyboard",
