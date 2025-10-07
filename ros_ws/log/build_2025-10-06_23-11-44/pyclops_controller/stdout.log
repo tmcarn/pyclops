@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing pyclops_controller.egg-info/PKG-INFO
+writing dependency_links to pyclops_controller.egg-info/dependency_links.txt
+writing entry points to pyclops_controller.egg-info/entry_points.txt
+writing requirements to pyclops_controller.egg-info/requires.txt
+writing top-level names to pyclops_controller.egg-info/top_level.txt
+reading manifest file 'pyclops_controller.egg-info/SOURCES.txt'
+writing manifest file 'pyclops_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/theo/pyclops/ros_ws/install/pyclops_controller/lib/python3.12/site-packages/pyclops-controller.egg-link (link to .)
+Installing drive_node script to /home/theo/pyclops/ros_ws/install/pyclops_controller/lib/pyclops_controller
+Installing teleop_node script to /home/theo/pyclops/ros_ws/install/pyclops_controller/lib/pyclops_controller
+
+Installed /home/theo/pyclops/ros_ws/build/pyclops_controller
+running symlink_data

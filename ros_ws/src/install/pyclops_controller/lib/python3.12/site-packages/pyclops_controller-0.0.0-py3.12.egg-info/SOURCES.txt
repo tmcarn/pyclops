@@ -9,6 +9,8 @@ setup.py
 ../build/pyclops_controller/pyclops_controller.egg-info/top_level.txt
 ../build/pyclops_controller/pyclops_controller.egg-info/zip-safe
 pyclops_controller/__init__.py
+pyclops_controller/drive_controller_node.py
+pyclops_controller/manual_steering_node.py
 resource/pyclops_controller
 test/test_copyright.py
 test/test_flake8.py

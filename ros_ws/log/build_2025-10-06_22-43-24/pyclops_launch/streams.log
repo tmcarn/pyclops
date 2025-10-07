@@ -1,0 +1,35 @@
+[0.267s] Invoking command in '/home/theo/pyclops/ros_ws/src/pyclops_launch': AMENT_PREFIX_PATH=/home/theo/pyclops/ros_ws/install/pyclops_controller:${AMENT_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(pyclops-uv) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/theo/pyclops/ros_ws/build/pyclops_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/theo/pyclops/ros_ws/install/pyclops_launch/lib/python3.12/site-packages:/home/theo/pyclops/ros_ws/install/pyclops_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pyclops_launch build --build-base /home/theo/pyclops/ros_ws/build/pyclops_launch/build install --record /home/theo/pyclops/ros_ws/build/pyclops_launch/install.log --single-version-externally-managed install_data
+[0.349s] running egg_info
+[0.349s] creating ../../build/pyclops_launch/pyclops_launch.egg-info
+[0.354s] writing ../../build/pyclops_launch/pyclops_launch.egg-info/PKG-INFO
+[0.355s] writing dependency_links to ../../build/pyclops_launch/pyclops_launch.egg-info/dependency_links.txt
+[0.355s] writing requirements to ../../build/pyclops_launch/pyclops_launch.egg-info/requires.txt
+[0.355s] writing top-level names to ../../build/pyclops_launch/pyclops_launch.egg-info/top_level.txt
+[0.355s] writing manifest file '../../build/pyclops_launch/pyclops_launch.egg-info/SOURCES.txt'
+[0.366s] reading manifest file '../../build/pyclops_launch/pyclops_launch.egg-info/SOURCES.txt'
+[0.366s] writing manifest file '../../build/pyclops_launch/pyclops_launch.egg-info/SOURCES.txt'
+[0.366s] running build
+[0.366s] running build_py
+[0.366s] creating /home/theo/pyclops/ros_ws/build/pyclops_launch/build
+[0.366s] creating /home/theo/pyclops/ros_ws/build/pyclops_launch/build/lib
+[0.366s] creating /home/theo/pyclops/ros_ws/build/pyclops_launch/build/lib/pyclops_launch
+[0.366s] copying pyclops_launch/__init__.py -> /home/theo/pyclops/ros_ws/build/pyclops_launch/build/lib/pyclops_launch
+[0.366s] copying pyclops_launch/launch.py -> /home/theo/pyclops/ros_ws/build/pyclops_launch/build/lib/pyclops_launch
+[0.366s] running install
+[0.369s] running install_lib
+[0.374s] creating /home/theo/pyclops/ros_ws/install/pyclops_launch/lib/python3.12/site-packages/pyclops_launch
+[0.374s] copying /home/theo/pyclops/ros_ws/build/pyclops_launch/build/lib/pyclops_launch/__init__.py -> /home/theo/pyclops/ros_ws/install/pyclops_launch/lib/python3.12/site-packages/pyclops_launch
+[0.374s] copying /home/theo/pyclops/ros_ws/build/pyclops_launch/build/lib/pyclops_launch/launch.py -> /home/theo/pyclops/ros_ws/install/pyclops_launch/lib/python3.12/site-packages/pyclops_launch
+[0.374s] byte-compiling /home/theo/pyclops/ros_ws/install/pyclops_launch/lib/python3.12/site-packages/pyclops_launch/__init__.py to __init__.cpython-312.pyc
+[0.375s] byte-compiling /home/theo/pyclops/ros_ws/install/pyclops_launch/lib/python3.12/site-packages/pyclops_launch/launch.py to launch.cpython-312.pyc
+[0.375s] running install_data
+[0.375s] creating /home/theo/pyclops/ros_ws/install/pyclops_launch/share/ament_index
+[0.375s] creating /home/theo/pyclops/ros_ws/install/pyclops_launch/share/ament_index/resource_index
+[0.375s] creating /home/theo/pyclops/ros_ws/install/pyclops_launch/share/ament_index/resource_index/packages
+[0.375s] copying resource/pyclops_launch -> /home/theo/pyclops/ros_ws/install/pyclops_launch/share/ament_index/resource_index/packages
+[0.375s] copying package.xml -> /home/theo/pyclops/ros_ws/install/pyclops_launch/share/pyclops_launch
+[0.375s] running install_egg_info
+[0.381s] Copying ../../build/pyclops_launch/pyclops_launch.egg-info to /home/theo/pyclops/ros_ws/install/pyclops_launch/lib/python3.12/site-packages/pyclops_launch-0.0.0-py3.12.egg-info
+[0.381s] running install_scripts
+[0.423s] writing list of installed files to '/home/theo/pyclops/ros_ws/build/pyclops_launch/install.log'
+[0.435s] Invoked command in '/home/theo/pyclops/ros_ws/src/pyclops_launch' returned '0': AMENT_PREFIX_PATH=/home/theo/pyclops/ros_ws/install/pyclops_controller:${AMENT_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(pyclops-uv) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/theo/pyclops/ros_ws/build/pyclops_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/theo/pyclops/ros_ws/install/pyclops_launch/lib/python3.12/site-packages:/home/theo/pyclops/ros_ws/install/pyclops_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pyclops_launch build --build-base /home/theo/pyclops/ros_ws/build/pyclops_launch/build install --record /home/theo/pyclops/ros_ws/build/pyclops_launch/install.log --single-version-externally-managed install_data

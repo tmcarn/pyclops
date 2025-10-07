@@ -1,2 +1,3 @@
 [console_scripts]
-test_node = pyclop_controller.my_first_node:main
+drive_node = pyclops_controller.drive_controller_node:main
+teleop_node = pyclops_controller.manual_steering_node:main

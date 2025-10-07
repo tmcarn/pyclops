@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import rclpy
 from rclpy.node import Node
 
@@ -27,9 +25,9 @@ class DiffDriveController(Node):
 
         self.omega = None
         
-        self.create_subscription(Float32MultiArray, '/wheel_commands', self.update(), 1)
+        self.create_subscription(Float32MultiArray, '/wheel_commands', self.update_position, 1)
 
-        self.position_publisher = self.create_publisher(String, '/postion', 1)
+        self.position_publisher = self.create_publisher(String, '/position', 1)
 
 
     def compute_twist(self):
@@ -45,7 +43,7 @@ class DiffDriveController(Node):
 
         return omega
 
-    def update(self, msg:Float32MultiArray):
+    def update_position(self, msg:Float32MultiArray):
 
         dt = 0.1
 

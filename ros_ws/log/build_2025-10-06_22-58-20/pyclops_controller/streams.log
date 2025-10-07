@@ -1,0 +1,18 @@
+[0.259s] Invoking command in '/home/theo/pyclops/ros_ws/src/pyclops_controller': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/theo/pyclops/ros_ws/build/pyclops_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/theo/pyclops/ros_ws/install/pyclops_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pyclops_controller build --build-base /home/theo/pyclops/ros_ws/build/pyclops_controller/build install --record /home/theo/pyclops/ros_ws/build/pyclops_controller/install.log --single-version-externally-managed install_data
+[0.341s] running egg_info
+[0.346s] writing ../../build/pyclops_controller/pyclops_controller.egg-info/PKG-INFO
+[0.347s] writing dependency_links to ../../build/pyclops_controller/pyclops_controller.egg-info/dependency_links.txt
+[0.347s] writing entry points to ../../build/pyclops_controller/pyclops_controller.egg-info/entry_points.txt
+[0.347s] writing requirements to ../../build/pyclops_controller/pyclops_controller.egg-info/requires.txt
+[0.347s] writing top-level names to ../../build/pyclops_controller/pyclops_controller.egg-info/top_level.txt
+[0.357s] reading manifest file '../../build/pyclops_controller/pyclops_controller.egg-info/SOURCES.txt'
+[0.358s] writing manifest file '../../build/pyclops_controller/pyclops_controller.egg-info/SOURCES.txt'
+[0.358s] running build
+[0.358s] running build_py
+[0.358s] running install
+[0.360s] running install_lib
+[0.366s] running install_data
+[0.366s] warning: install_data: setup script did not provide a directory for 'share/pyclops_controller/launch/launch.py' -- installing right in '/home/theo/pyclops/ros_ws/install/pyclops_controller'
+[0.366s] 
+[0.366s] error: can't copy 'share/pyclops_controller/launch/launch.py': doesn't exist or not a regular file
+[0.375s] Invoked command in '/home/theo/pyclops/ros_ws/src/pyclops_controller' returned '1': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/theo/pyclops/ros_ws/build/pyclops_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/theo/pyclops/ros_ws/install/pyclops_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pyclops_controller build --build-base /home/theo/pyclops/ros_ws/build/pyclops_controller/build install --record /home/theo/pyclops/ros_ws/build/pyclops_controller/install.log --single-version-externally-managed install_data
