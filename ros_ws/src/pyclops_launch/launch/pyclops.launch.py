@@ -2,8 +2,9 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 from launch.substitutions import Command
 from launch_ros.parameter_descriptions import ParameterValue
+import os
 
-URDF_PATH = "robot_description/robot.urdf"
+URDF_PATH = os.path.expanduser("~/pyclops/ros_ws/src/robot_description/urdf/robot.urdf")
 
 def generate_launch_description():
     ld = LaunchDescription()

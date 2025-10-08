@@ -1,0 +1,17 @@
+running egg_info
+writing ../../build/pyclops_launch/pyclops_launch.egg-info/PKG-INFO
+writing dependency_links to ../../build/pyclops_launch/pyclops_launch.egg-info/dependency_links.txt
+writing requirements to ../../build/pyclops_launch/pyclops_launch.egg-info/requires.txt
+writing top-level names to ../../build/pyclops_launch/pyclops_launch.egg-info/top_level.txt
+reading manifest file '../../build/pyclops_launch/pyclops_launch.egg-info/SOURCES.txt'
+writing manifest file '../../build/pyclops_launch/pyclops_launch.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/theo/pyclops/ros_ws/install/pyclops_launch/lib/python3.12/site-packages/pyclops_launch-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/pyclops_launch/pyclops_launch.egg-info to /home/theo/pyclops/ros_ws/install/pyclops_launch/lib/python3.12/site-packages/pyclops_launch-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/theo/pyclops/ros_ws/build/pyclops_launch/install.log'

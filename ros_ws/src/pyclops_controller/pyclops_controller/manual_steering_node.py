@@ -7,7 +7,7 @@ class ManualSteering(Node):
     def __init__(self):
         super().__init__("manual_steering_controller")
 
-        self.TRACK_WIDTH = 0.2
+        self.TRACK_WIDTH = 0.1
 
         # Control parameters
         self.lin_vel = 0.5  # m/s

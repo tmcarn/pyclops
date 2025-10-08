@@ -15,7 +15,7 @@ class DiffDriveController(Node):
         super().__init__("diff_drive_controller")
 
         self.WHEEL_RADIUS = 0.1
-        self.TRACK_WIDTH = 0.2
+        self.TRACK_WIDTH = 0.1
 
         # State Variables
         self.T = np.eye(3)

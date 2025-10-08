@@ -13,7 +13,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/body.stl"/>
+        <mesh filename="package://robot_description/assets/body.stl"/>
       </geometry>
       <material name="body_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -22,7 +22,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/body.stl"/>
+        <mesh filename="package://robot_description/assets/body.stl"/>
       </geometry>
     </collision>
   </link>
@@ -37,7 +37,7 @@
     <visual>
       <origin xyz="3.85186e-34 -2.29621e-18 0" rpy="-1.5708 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/right_wheel.stl"/>
+        <mesh filename="package://robot_description/assets/right_wheel.stl"/>
       </geometry>
       <material name="right_wheel_material">
         <color rgba="0.647059 0.647059 0.647059 1"/>
@@ -46,7 +46,7 @@
     <collision>
       <origin xyz="3.85186e-34 -2.29621e-18 0" rpy="-1.5708 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/right_wheel.stl"/>
+        <mesh filename="package://robot_description/assets/right_wheel.stl"/>
       </geometry>
     </collision>
   </link>
@@ -69,7 +69,7 @@
     <visual>
       <origin xyz="-2.39987e-18 -3.16527e-18 0.1" rpy="1.5708 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/left_wheel.stl"/>
+        <mesh filename="package://robot_description/assets/left_wheel.stl"/>
       </geometry>
       <material name="left_wheel_material">
         <color rgba="0.647059 0.647059 0.647059 1"/>
@@ -78,7 +78,7 @@
     <collision>
       <origin xyz="-2.39987e-18 -3.16527e-18 0.1" rpy="1.5708 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets/left_wheel.stl"/>
+        <mesh filename="package://robot_description/assets/left_wheel.stl"/>
       </geometry>
     </collision>
   </link>
