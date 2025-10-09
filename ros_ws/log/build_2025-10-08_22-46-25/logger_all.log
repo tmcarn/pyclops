@@ -1,0 +1,249 @@
+[0.042s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.042s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xf96aa561d1f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xf96aa561cbf0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xf96aa561cbf0>>, mixin_verb=('build',))
+[0.056s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.056s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.056s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.057s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.057s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.057s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.057s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/theo/pyclops/ros_ws'
+[0.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_controller) by extension 'ignore'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_controller) by extension 'ignore_ament_install'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_controller) by extensions ['colcon_pkg']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_controller) by extension 'colcon_pkg'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_controller) by extensions ['colcon_meta']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_controller) by extension 'colcon_meta'
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_controller) by extensions ['ros']
+[0.067s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_controller) by extension 'ros'
+[0.068s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pyclops_controller' with type 'ros.ament_python' and name 'pyclops_controller'
+[0.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_launch) by extension 'ignore'
+[0.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_launch) by extension 'ignore_ament_install'
+[0.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_launch) by extensions ['colcon_pkg']
+[0.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_launch) by extension 'colcon_pkg'
+[0.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_launch) by extensions ['colcon_meta']
+[0.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_launch) by extension 'colcon_meta'
+[0.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_launch) by extensions ['ros']
+[0.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/pyclops_launch) by extension 'ros'
+[0.069s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pyclops_launch' with type 'ros.ament_python' and name 'pyclops_launch'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore_ament_install'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_pkg']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_pkg'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_meta']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_meta'
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ros']
+[0.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ros'
+[0.069s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_description' with type 'ros.ament_python' and name 'robot_description'
+[0.069s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.069s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.069s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.069s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.069s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.076s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/theo/pyclops/ros_ws/install
+[0.076s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/theo/pyclops/ros_ws/src/install
+[0.077s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 315 installed packages in /opt/ros/jazzy
+[0.077s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.092s] Level 5:colcon.colcon_core.verb:set package 'pyclops_controller' build argument 'cmake_args' from command line to 'None'
+[0.092s] Level 5:colcon.colcon_core.verb:set package 'pyclops_controller' build argument 'cmake_target' from command line to 'None'
+[0.092s] Level 5:colcon.colcon_core.verb:set package 'pyclops_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.092s] Level 5:colcon.colcon_core.verb:set package 'pyclops_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.092s] Level 5:colcon.colcon_core.verb:set package 'pyclops_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.092s] Level 5:colcon.colcon_core.verb:set package 'pyclops_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.092s] Level 5:colcon.colcon_core.verb:set package 'pyclops_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.092s] Level 5:colcon.colcon_core.verb:set package 'pyclops_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.092s] Level 5:colcon.colcon_core.verb:set package 'pyclops_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.092s] DEBUG:colcon.colcon_core.verb:Building package 'pyclops_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/theo/pyclops/ros_ws/build/pyclops_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/theo/pyclops/ros_ws/install/pyclops_controller', 'merge_install': False, 'path': '/home/theo/pyclops/ros_ws/src/pyclops_controller', 'symlink_install': True, 'test_result_base': None}
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_args' from command line to 'None'
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target' from command line to 'None'
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.093s] DEBUG:colcon.colcon_core.verb:Building package 'robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/theo/pyclops/ros_ws/build/robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/theo/pyclops/ros_ws/install/robot_description', 'merge_install': False, 'path': '/home/theo/pyclops/ros_ws/src/robot_description', 'symlink_install': True, 'test_result_base': None}
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'pyclops_launch' build argument 'cmake_args' from command line to 'None'
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'pyclops_launch' build argument 'cmake_target' from command line to 'None'
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'pyclops_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'pyclops_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'pyclops_launch' build argument 'cmake_clean_first' from command line to 'False'
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'pyclops_launch' build argument 'cmake_force_configure' from command line to 'False'
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'pyclops_launch' build argument 'ament_cmake_args' from command line to 'None'
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'pyclops_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[0.093s] Level 5:colcon.colcon_core.verb:set package 'pyclops_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.093s] DEBUG:colcon.colcon_core.verb:Building package 'pyclops_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/theo/pyclops/ros_ws/build/pyclops_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/theo/pyclops/ros_ws/install/pyclops_launch', 'merge_install': False, 'path': '/home/theo/pyclops/ros_ws/src/pyclops_launch', 'symlink_install': True, 'test_result_base': None}
+[0.093s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.093s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.093s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/theo/pyclops/ros_ws/src/pyclops_controller' with build type 'ament_python'
+[0.093s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyclops_controller', 'ament_prefix_path')
+[0.094s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/install/pyclops_controller/share/pyclops_controller/hook/ament_prefix_path.ps1'
+[0.094s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/pyclops/ros_ws/install/pyclops_controller/share/pyclops_controller/hook/ament_prefix_path.dsv'
+[0.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/install/pyclops_controller/share/pyclops_controller/hook/ament_prefix_path.sh'
+[0.095s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.095s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.096s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/theo/pyclops/ros_ws/src/robot_description' with build type 'ament_python'
+[0.096s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'ament_prefix_path')
+[0.097s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/install/robot_description/share/robot_description/hook/ament_prefix_path.ps1'
+[0.097s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/pyclops/ros_ws/install/robot_description/share/robot_description/hook/ament_prefix_path.dsv'
+[0.097s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/install/robot_description/share/robot_description/hook/ament_prefix_path.sh'
+[0.097s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.097s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.173s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/theo/pyclops/ros_ws/src/pyclops_controller'
+[0.173s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.173s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.246s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/theo/pyclops/ros_ws/src/robot_description'
+[0.247s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.247s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/pyclops/ros_ws/build/pyclops_controller': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/theo/pyclops/ros_ws/build/pyclops_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/theo/pyclops/ros_ws/install/pyclops_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/theo/pyclops/ros_ws/build/pyclops_controller/build --no-deps symlink_data
+[0.446s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/pyclops/ros_ws/build/robot_description': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/theo/pyclops/ros_ws/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/theo/pyclops/ros_ws/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/theo/pyclops/ros_ws/build/robot_description/build --no-deps symlink_data
+[0.655s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'pythonpath_develop')
+[0.655s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/pyclops/ros_ws/build/robot_description' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/theo/pyclops/ros_ws/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/theo/pyclops/ros_ws/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/theo/pyclops/ros_ws/build/robot_description/build --no-deps symlink_data
+[0.655s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/build/robot_description/share/robot_description/hook/pythonpath_develop.ps1'
+[0.656s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/pyclops/ros_ws/build/robot_description/share/robot_description/hook/pythonpath_develop.dsv'
+[0.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/build/robot_description/share/robot_description/hook/pythonpath_develop.sh'
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/robot_description' for CMake module files
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/robot_description' for CMake config files
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/robot_description/lib'
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/robot_description/bin'
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/robot_description/lib/pkgconfig/robot_description.pc'
+[0.658s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/robot_description/lib/python3.12/site-packages'
+[0.658s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'pythonpath')
+[0.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/install/robot_description/share/robot_description/hook/pythonpath.ps1'
+[0.658s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/pyclops/ros_ws/install/robot_description/share/robot_description/hook/pythonpath.dsv'
+[0.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/install/robot_description/share/robot_description/hook/pythonpath.sh'
+[0.658s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/robot_description/bin'
+[0.658s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_description)
+[0.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/pyclops/ros_ws/install/robot_description/share/robot_description/package.ps1'
+[0.658s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/pyclops/ros_ws/install/robot_description/share/robot_description/package.dsv'
+[0.659s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/pyclops/ros_ws/install/robot_description/share/robot_description/package.sh'
+[0.659s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/pyclops/ros_ws/install/robot_description/share/robot_description/package.bash'
+[0.659s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/pyclops/ros_ws/install/robot_description/share/robot_description/package.zsh'
+[0.659s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/pyclops/ros_ws/install/robot_description/share/colcon-core/packages/robot_description)
+[0.660s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyclops_controller', 'pythonpath_develop')
+[0.660s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/pyclops/ros_ws/build/pyclops_controller' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/theo/pyclops/ros_ws/build/pyclops_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/theo/pyclops/ros_ws/install/pyclops_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/theo/pyclops/ros_ws/build/pyclops_controller/build --no-deps symlink_data
+[0.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/build/pyclops_controller/share/pyclops_controller/hook/pythonpath_develop.ps1'
+[0.660s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/pyclops/ros_ws/build/pyclops_controller/share/pyclops_controller/hook/pythonpath_develop.dsv'
+[0.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/build/pyclops_controller/share/pyclops_controller/hook/pythonpath_develop.sh'
+[0.661s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/pyclops_controller' for CMake module files
+[0.661s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/pyclops_controller' for CMake config files
+[0.661s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/pyclops_controller/lib'
+[0.661s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/pyclops_controller/bin'
+[0.661s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/pyclops_controller/lib/pkgconfig/pyclops_controller.pc'
+[0.661s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/pyclops_controller/lib/python3.12/site-packages'
+[0.661s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyclops_controller', 'pythonpath')
+[0.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/install/pyclops_controller/share/pyclops_controller/hook/pythonpath.ps1'
+[0.661s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/pyclops/ros_ws/install/pyclops_controller/share/pyclops_controller/hook/pythonpath.dsv'
+[0.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/install/pyclops_controller/share/pyclops_controller/hook/pythonpath.sh'
+[0.662s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/pyclops_controller/bin'
+[0.662s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pyclops_controller)
+[0.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/pyclops/ros_ws/install/pyclops_controller/share/pyclops_controller/package.ps1'
+[0.662s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/pyclops/ros_ws/install/pyclops_controller/share/pyclops_controller/package.dsv'
+[0.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/pyclops/ros_ws/install/pyclops_controller/share/pyclops_controller/package.sh'
+[0.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/pyclops/ros_ws/install/pyclops_controller/share/pyclops_controller/package.bash'
+[0.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/pyclops/ros_ws/install/pyclops_controller/share/pyclops_controller/package.zsh'
+[0.662s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/pyclops/ros_ws/install/pyclops_controller/share/colcon-core/packages/pyclops_controller)
+[0.663s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/theo/pyclops/ros_ws/src/pyclops_launch' with build type 'ament_python'
+[0.663s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyclops_launch', 'ament_prefix_path')
+[0.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/install/pyclops_launch/share/pyclops_launch/hook/ament_prefix_path.ps1'
+[0.663s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/pyclops/ros_ws/install/pyclops_launch/share/pyclops_launch/hook/ament_prefix_path.dsv'
+[0.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/install/pyclops_launch/share/pyclops_launch/hook/ament_prefix_path.sh'
+[0.664s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.664s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.745s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/theo/pyclops/ros_ws/src/pyclops_launch'
+[0.745s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.745s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.943s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/theo/pyclops/ros_ws/build/pyclops_launch': AMENT_PREFIX_PATH=/home/theo/pyclops/ros_ws/install/pyclops_controller:/home/theo/pyclops/ros_ws/install/robot_description:/home/theo/pyclops/ros_ws/src/install/pyclops_launch:/home/theo/pyclops/ros_ws/src/install/pyclops_controller:/home/theo/pyclops/ros_ws/install/pyclops_launch:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/theo/pyclops/ros_ws/build/pyclops_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/theo/pyclops/ros_ws/install/pyclops_launch/lib/python3.12/site-packages:/home/theo/pyclops/ros_ws/build/pyclops_controller:/home/theo/pyclops/ros_ws/install/pyclops_controller/lib/python3.12/site-packages:/home/theo/pyclops/ros_ws/build/robot_description:/home/theo/pyclops/ros_ws/install/robot_description/lib/python3.12/site-packages:/home/theo/pyclops/ros_ws/src/build/pyclops_launch:/home/theo/pyclops/ros_ws/src/install/pyclops_launch/lib/python3.12/site-packages:/home/theo/pyclops/ros_ws/src/build/pyclops_controller:/home/theo/pyclops/ros_ws/src/install/pyclops_controller/lib/python3.12/site-packages:/home/theo/pyclops/ros_ws/build/pyclops_launch:/home/theo/pyclops/ros_ws/install/pyclops_launch/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/theo/pyclops/ros_ws/build/pyclops_launch/build --no-deps symlink_data
+[1.154s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyclops_launch', 'pythonpath_develop')
+[1.154s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/build/pyclops_launch/share/pyclops_launch/hook/pythonpath_develop.ps1'
+[1.154s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/pyclops/ros_ws/build/pyclops_launch/share/pyclops_launch/hook/pythonpath_develop.dsv'
+[1.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/theo/pyclops/ros_ws/build/pyclops_launch' returned '0': AMENT_PREFIX_PATH=/home/theo/pyclops/ros_ws/install/pyclops_controller:/home/theo/pyclops/ros_ws/install/robot_description:/home/theo/pyclops/ros_ws/src/install/pyclops_launch:/home/theo/pyclops/ros_ws/src/install/pyclops_controller:/home/theo/pyclops/ros_ws/install/pyclops_launch:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/theo/pyclops/ros_ws/build/pyclops_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/theo/pyclops/ros_ws/install/pyclops_launch/lib/python3.12/site-packages:/home/theo/pyclops/ros_ws/build/pyclops_controller:/home/theo/pyclops/ros_ws/install/pyclops_controller/lib/python3.12/site-packages:/home/theo/pyclops/ros_ws/build/robot_description:/home/theo/pyclops/ros_ws/install/robot_description/lib/python3.12/site-packages:/home/theo/pyclops/ros_ws/src/build/pyclops_launch:/home/theo/pyclops/ros_ws/src/install/pyclops_launch/lib/python3.12/site-packages:/home/theo/pyclops/ros_ws/src/build/pyclops_controller:/home/theo/pyclops/ros_ws/src/install/pyclops_controller/lib/python3.12/site-packages:/home/theo/pyclops/ros_ws/build/pyclops_launch:/home/theo/pyclops/ros_ws/install/pyclops_launch/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/theo/pyclops/ros_ws/build/pyclops_launch/build --no-deps symlink_data
+[1.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/build/pyclops_launch/share/pyclops_launch/hook/pythonpath_develop.sh'
+[1.155s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/pyclops_launch' for CMake module files
+[1.155s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/pyclops_launch' for CMake config files
+[1.155s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/pyclops_launch/lib'
+[1.155s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/pyclops_launch/bin'
+[1.155s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/pyclops_launch/lib/pkgconfig/pyclops_launch.pc'
+[1.155s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/pyclops_launch/lib/python3.12/site-packages'
+[1.155s] Level 1:colcon.colcon_core.shell:create_environment_hook('pyclops_launch', 'pythonpath')
+[1.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/install/pyclops_launch/share/pyclops_launch/hook/pythonpath.ps1'
+[1.156s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/theo/pyclops/ros_ws/install/pyclops_launch/share/pyclops_launch/hook/pythonpath.dsv'
+[1.156s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/theo/pyclops/ros_ws/install/pyclops_launch/share/pyclops_launch/hook/pythonpath.sh'
+[1.156s] Level 1:colcon.colcon_core.environment:checking '/home/theo/pyclops/ros_ws/install/pyclops_launch/bin'
+[1.156s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pyclops_launch)
+[1.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/pyclops/ros_ws/install/pyclops_launch/share/pyclops_launch/package.ps1'
+[1.156s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/theo/pyclops/ros_ws/install/pyclops_launch/share/pyclops_launch/package.dsv'
+[1.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/pyclops/ros_ws/install/pyclops_launch/share/pyclops_launch/package.sh'
+[1.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/pyclops/ros_ws/install/pyclops_launch/share/pyclops_launch/package.bash'
+[1.157s] INFO:colcon.colcon_core.shell:Creating package script '/home/theo/pyclops/ros_ws/install/pyclops_launch/share/pyclops_launch/package.zsh'
+[1.157s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/theo/pyclops/ros_ws/install/pyclops_launch/share/colcon-core/packages/pyclops_launch)
+[1.157s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.157s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.157s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.157s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.160s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.160s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.160s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.168s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.168s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/theo/pyclops/ros_ws/install/local_setup.ps1'
+[1.169s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/theo/pyclops/ros_ws/install/_local_setup_util_ps1.py'
+[1.169s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/theo/pyclops/ros_ws/install/setup.ps1'
+[1.169s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/theo/pyclops/ros_ws/install/local_setup.sh'
+[1.170s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/theo/pyclops/ros_ws/install/_local_setup_util_sh.py'
+[1.170s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/theo/pyclops/ros_ws/install/setup.sh'
+[1.171s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/theo/pyclops/ros_ws/install/local_setup.bash'
+[1.171s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/theo/pyclops/ros_ws/install/setup.bash'
+[1.171s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/theo/pyclops/ros_ws/install/local_setup.zsh'
+[1.171s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/theo/pyclops/ros_ws/install/setup.zsh'

@@ -1,0 +1,31 @@
+[0.350s] Invoking command in '/home/theo/pyclops/ros_ws/build/robot_description': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/theo/pyclops/ros_ws/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/theo/pyclops/ros_ws/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/theo/pyclops/ros_ws/build/robot_description/build
+[0.452s] running develop
+[0.514s] Removing /home/theo/pyclops/ros_ws/install/robot_description/lib/python3.12/site-packages/robot-description.egg-link (link to .)
+[0.531s] Invoked command in '/home/theo/pyclops/ros_ws/build/robot_description' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/theo/pyclops/ros_ws/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/theo/pyclops/ros_ws/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/theo/pyclops/ros_ws/build/robot_description/build
+[0.532s] Invoking command in '/home/theo/pyclops/ros_ws/src/robot_description': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/theo/pyclops/ros_ws/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/theo/pyclops/ros_ws/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/theo/pyclops/ros_ws/build/robot_description/build install --record /home/theo/pyclops/ros_ws/build/robot_description/install.log --single-version-externally-managed install_data --force
+[0.622s] running egg_info
+[0.628s] writing ../../build/robot_description/robot_description.egg-info/PKG-INFO
+[0.628s] writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt
+[0.628s] writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt
+[0.628s] writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt
+[0.640s] reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[0.640s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[0.640s] running build
+[0.640s] running build_py
+[0.640s] running install
+[0.643s] running install_lib
+[0.649s] creating /home/theo/pyclops/ros_ws/install/robot_description/lib/python3.12/site-packages/robot_description
+[0.649s] copying /home/theo/pyclops/ros_ws/build/robot_description/build/lib/robot_description/__init__.py -> /home/theo/pyclops/ros_ws/install/robot_description/lib/python3.12/site-packages/robot_description
+[0.649s] byte-compiling /home/theo/pyclops/ros_ws/install/robot_description/lib/python3.12/site-packages/robot_description/__init__.py to __init__.cpython-312.pyc
+[0.650s] running install_data
+[0.650s] copying resource/robot_description -> /home/theo/pyclops/ros_ws/install/robot_description/share/ament_index/resource_index/packages
+[0.650s] copying package.xml -> /home/theo/pyclops/ros_ws/install/robot_description/share/robot_description
+[0.650s] copying urdf/robot.urdf -> /home/theo/pyclops/ros_ws/install/robot_description/share/robot_description/urdf
+[0.650s] copying assets/body.stl -> /home/theo/pyclops/ros_ws/install/robot_description/share/robot_description/assets
+[0.650s] copying assets/right_wheel.stl -> /home/theo/pyclops/ros_ws/install/robot_description/share/robot_description/assets
+[0.650s] copying assets/left_wheel.stl -> /home/theo/pyclops/ros_ws/install/robot_description/share/robot_description/assets
+[0.650s] running install_egg_info
+[0.656s] Copying ../../build/robot_description/robot_description.egg-info to /home/theo/pyclops/ros_ws/install/robot_description/lib/python3.12/site-packages/robot_description-0.0.0-py3.12.egg-info
+[0.657s] running install_scripts
+[0.700s] writing list of installed files to '/home/theo/pyclops/ros_ws/build/robot_description/install.log'
+[0.712s] Invoked command in '/home/theo/pyclops/ros_ws/src/robot_description' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/theo/pyclops/ros_ws/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/theo/pyclops/ros_ws/install/robot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/theo/pyclops/ros_ws/build/robot_description/build install --record /home/theo/pyclops/ros_ws/build/robot_description/install.log --single-version-externally-managed install_data --force

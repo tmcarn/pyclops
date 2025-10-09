@@ -42,8 +42,9 @@ class DiffDriveController(Node):
 
         omega = np.zeros((3,3))
         omega[0,1] = -theta_dot
-        omega[0,2] = x_dot
+        # omega[0,2] = x_dot
         omega[1,0] = theta_dot
+        omega[1,2] = -x_dot
 
         self.omega = omega
 
@@ -55,6 +56,9 @@ class DiffDriveController(Node):
 
         self.w_left_vel = msg.data[0]
         self.w_right_vel = msg.data[1]
+
+        self.w_left_pos -= self.w_left_vel * dt
+        self.w_right_pos += self.w_right_vel * dt
 
         self.compute_twist() 
 
@@ -71,7 +75,7 @@ class DiffDriveController(Node):
     def publish_tf(self):
         t = TransformStamped()
         t.header.stamp = self.get_clock().now().to_msg()
-        t.header.frame_id = 'odom'
+        t.header.frame_id = 'base_link'
         t.child_frame_id = 'body'
         
         t.transform.translation.x = self.x_pos
@@ -93,7 +97,6 @@ class DiffDriveController(Node):
         joint_state.header.stamp = self.get_clock().now().to_msg()
         joint_state.name = ['left_wheel', 'right_wheel']
 
-        # TODO: Update wheel positions by integrating velocity
         joint_state.position = [self.w_left_pos, self.w_right_pos]
         
         self.joint_state_publisher.publish(joint_state)

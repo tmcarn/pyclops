@@ -42,8 +42,9 @@ class DiffDriveController(Node):
 
         omega = np.zeros((3,3))
         omega[0,1] = -theta_dot
-        omega[0,2] = x_dot
+        # omega[0,2] = x_dot
         omega[1,0] = theta_dot
+        omega[1,2] = -x_dot
 
         self.omega = omega
 
@@ -71,7 +72,7 @@ class DiffDriveController(Node):
     def publish_tf(self):
         t = TransformStamped()
         t.header.stamp = self.get_clock().now().to_msg()
-        t.header.frame_id = 'odom'
+        t.header.frame_id = 'base_link'
         t.child_frame_id = 'body'
         
         t.transform.translation.x = self.x_pos

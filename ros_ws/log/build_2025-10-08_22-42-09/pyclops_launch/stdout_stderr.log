@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing pyclops_launch.egg-info/PKG-INFO
+writing dependency_links to pyclops_launch.egg-info/dependency_links.txt
+writing requirements to pyclops_launch.egg-info/requires.txt
+writing top-level names to pyclops_launch.egg-info/top_level.txt
+reading manifest file 'pyclops_launch.egg-info/SOURCES.txt'
+writing manifest file 'pyclops_launch.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/theo/pyclops/ros_ws/install/pyclops_launch/lib/python3.12/site-packages/pyclops-launch.egg-link (link to .)
+
+Installed /home/theo/pyclops/ros_ws/build/pyclops_launch
+running symlink_data
+symbolically linking /home/theo/pyclops/ros_ws/build/pyclops_launch/resource/pyclops_launch -> /home/theo/pyclops/ros_ws/install/pyclops_launch/share/ament_index/resource_index/packages
+symbolically linking /home/theo/pyclops/ros_ws/build/pyclops_launch/package.xml -> /home/theo/pyclops/ros_ws/install/pyclops_launch/share/pyclops_launch
+symbolically linking /home/theo/pyclops/ros_ws/build/pyclops_launch/launch/pyclops.launch.py -> /home/theo/pyclops/ros_ws/install/pyclops_launch/share/pyclops_launch/launch
