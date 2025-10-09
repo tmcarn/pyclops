@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: robot-description
+Version: 0.0.0
+Summary: TODO: Package description
+Maintainer: theo
+Maintainer-email: theo_mcarn@brown.edu
+License: TODO: License declaration
+Provides-Extra: test

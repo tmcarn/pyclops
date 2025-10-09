@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+assets/body.stl
+assets/left_wheel.stl
+assets/right_wheel.stl
+resource/robot_description
+robot_description/__init__.py
+robot_description.egg-info/PKG-INFO
+robot_description.egg-info/SOURCES.txt
+robot_description.egg-info/dependency_links.txt
+robot_description.egg-info/requires.txt
+robot_description.egg-info/top_level.txt
+robot_description.egg-info/zip-safe
+urdf/robot.urdf

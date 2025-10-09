@@ -80,7 +80,7 @@ class DiffDriveController(Node):
         
         t.transform.translation.x = self.x_pos
         t.transform.translation.y = self.y_pos
-        t.transform.translation.z = 0.0
+        t.transform.translation.z = 0.035
 
         qx, qy, qz, qw = self.rotation_matrix_to_quaternion_2d(self.rot)
         
