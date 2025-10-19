@@ -1,15 +1,13 @@
 package.xml
 setup.cfg
 setup.py
-../../build/robot_description/robot_description.egg-info/PKG-INFO
-../../build/robot_description/robot_description.egg-info/SOURCES.txt
-../../build/robot_description/robot_description.egg-info/dependency_links.txt
-../../build/robot_description/robot_description.egg-info/requires.txt
-../../build/robot_description/robot_description.egg-info/top_level.txt
-../../build/robot_description/robot_description.egg-info/zip-safe
 assets/body.stl
 assets/left_wheel.stl
 assets/right_wheel.stl
+description/gz_control.xacro
+description/inertial_macros.xacro
+description/robot.urdf.xacro
+description/robot_core.xacro
 resource/robot_description
 robot_description/__init__.py
 robot_description.egg-info/PKG-INFO
@@ -18,4 +16,3 @@ robot_description.egg-info/dependency_links.txt
 robot_description.egg-info/requires.txt
 robot_description.egg-info/top_level.txt
 robot_description.egg-info/zip-safe
-urdf/robot.urdf

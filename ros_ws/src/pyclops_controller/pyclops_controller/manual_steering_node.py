@@ -18,7 +18,7 @@ class ManualSteering(Node):
         self.right_vel = 0.0
 
         self.create_subscription(Twist, "/cmd_vel", self.update_wheel_commands, 1)
-        self.wheel_command_publisher = self.create_publisher(Float32MultiArray, '/wheel_commands', 1)
+        self.wheel_command_publisher = self.create_publisher(Float32MultiArray, '/cmd_wheel_vel', 1)
         
     def inverse_kinematics(self, lin_vel, ang_vel):
         left_vel = lin_vel - (ang_vel * self.TRACK_WIDTH / 2.0)

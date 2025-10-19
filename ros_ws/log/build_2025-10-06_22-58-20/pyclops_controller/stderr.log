@@ -1,3 +1,0 @@
-warning: install_data: setup script did not provide a directory for 'share/pyclops_controller/launch/launch.py' -- installing right in '/home/theo/pyclops/ros_ws/install/pyclops_controller'
-
-error: can't copy 'share/pyclops_controller/launch/launch.py': doesn't exist or not a regular file

@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<robot name="robot_config">
+  <link name="base_link"/>
+  
+  <joint name="base_link_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 -1.5708"/>
+    <parent link="base_link"/>
+    <child link="body"/>
+  </joint>
+  
+  <!-- Link body -->
+  <link name="body">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="5.0"/>  <!-- Realistic mass -->
+      <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="model://assets/body.stl"/>
+      </geometry>
+      <material name="body_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="model://assets/body.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  
+  <!-- Gazebo material for body -->
+  <gazebo reference="body">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+  
+  <!-- Link right_wheel -->
+  <link name="right_wheel">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.5"/> 
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="model://assets/right_wheel.stl"/>
+      </geometry>
+      <material name="right_wheel_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="model://assets/right_wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  
+  <!-- Gazebo properties for right wheel -->
+  <gazebo reference="right_wheel">
+    <material>Gazebo/Gray</material>
+    <mu1>1.0</mu1>  <!-- Friction -->
+    <mu2>1.0</mu2>
+    <kp>1000000.0</kp>  <!-- Contact stiffness -->
+    <kd>100.0</kd> <!-- Dampening -->
+  </gazebo>
+  
+  <joint name="right_wheel_joint" type="continuous">
+    <origin xyz="0 0 0" rpy="1.5708 -0 1.5708"/>
+    <parent link="body"/>
+    <child link="right_wheel"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  
+  <!-- Link left_wheel -->
+  <link name="left_wheel">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.5"/> 
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0.1" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="model://assets/left_wheel.stl"/>
+      </geometry>
+      <material name="left_wheel_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.1" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="model://assets/left_wheel.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  
+  <!-- Gazebo properties for left wheel -->
+  <gazebo reference="left_wheel">
+    <material>Gazebo/Gray</material>
+    <mu1>1.0</mu1>  <!-- Friction -->
+    <mu2>1.0</mu2>
+    <kp>1000000.0</kp>  <!-- Contact stiffness -->
+    <kd>100.0</kd> <!-- Dampening -->
+  </gazebo>
+  
+  <joint name="left_wheel_joint" type="continuous">
+    <origin xyz="0.1 0 0" rpy="-1.5708 -0 1.5708"/>
+    <parent link="body"/>
+    <child link="left_wheel"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  
+  <gazebo>
+    <!-- 1. Joint State Publisher - Publishes wheel positions/velocities to /joint_states -->
+    <plugin filename="gz-sim-joint-state-publisher-system" 
+            name="gz::sim::systems::JointStatePublisher">
+      <joint_name>left_wheel_joint</joint_name>
+      <joint_name>right_wheel_joint</joint_name>
+    </plugin>
+
+    <plugin filename="gz-sim-joint-controller-system"
+          name="gz::sim::systems::JointController">
+    </plugin>
+
+  </gazebo>
+  
+</robot>

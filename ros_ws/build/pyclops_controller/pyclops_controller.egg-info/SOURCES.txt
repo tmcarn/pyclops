@@ -1,13 +1,6 @@
 package.xml
 setup.cfg
 setup.py
-../../build/pyclops_controller/pyclops_controller.egg-info/PKG-INFO
-../../build/pyclops_controller/pyclops_controller.egg-info/SOURCES.txt
-../../build/pyclops_controller/pyclops_controller.egg-info/dependency_links.txt
-../../build/pyclops_controller/pyclops_controller.egg-info/entry_points.txt
-../../build/pyclops_controller/pyclops_controller.egg-info/requires.txt
-../../build/pyclops_controller/pyclops_controller.egg-info/top_level.txt
-../../build/pyclops_controller/pyclops_controller.egg-info/zip-safe
 pyclops_controller/__init__.py
 pyclops_controller/drive_controller_node.py
 pyclops_controller/manual_steering_node.py
