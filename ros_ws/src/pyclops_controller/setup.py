@@ -27,7 +27,7 @@ setup(
     entry_points={
         'console_scripts': [
             "drive_node = pyclops_controller.drive_controller_node:main",
-            "teleop_node = pyclops_controller.manual_steering_node:main"
+            "ik_node = pyclops_controller.manual_steering_node:main"
         ],
     },
 )

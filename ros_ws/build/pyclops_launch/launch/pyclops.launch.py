@@ -1,1 +1,0 @@
-/home/theo/pyclops/ros_ws/src/pyclops_launch/launch/pyclops.launch.py

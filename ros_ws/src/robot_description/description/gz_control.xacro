@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
     <gazebo>
-        <plugin
+        <!-- <plugin
             filename="gz-sim-diff-drive-system"
             name="gz::sim::systems::DiffDrive">
             <left_joint>left_wheel_joint</left_joint>
@@ -14,6 +14,29 @@
             <tf_topic>/tf</tf_topic>
             <frame_id>odom</frame_id>
             <child_frame_id>base_link</child_frame_id>
+        </plugin> -->
+
+        <!-- Publishes robot state/transforms -->
+        <plugin filename="gz-sim-pose-publisher-system"
+                name="gz::sim::systems::PosePublisher">
+            <publish_link_pose>true</publish_link_pose>
+            <publish_sensor_pose>true</publish_sensor_pose>
+            <publish_collision_pose>false</publish_collision_pose>
+            <publish_visual_pose>false</publish_visual_pose>
+            <publish_nested_model_pose>true</publish_nested_model_pose>
+        </plugin>
+        
+        <!-- Joint state publisher (publishes joint positions/velocities) -->
+        <plugin filename="gz-sim-joint-state-publisher-system"
+                name="gz::sim::systems::JointStatePublisher">
+        </plugin>
+        
+        <!-- Joint controller (accepts velocity commands) -->
+        <plugin filename="gz-sim-joint-controller-system"
+                name="gz::sim::systems::JointController">
+            <joint_name>left_wheel_joint</joint_name>
+            <joint_name>right_wheel_joint</joint_name>
+            <use_velocity_commands>true</use_velocity_commands>
         </plugin>
     </gazebo>
 </robot>

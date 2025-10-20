@@ -10,41 +10,53 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     # Package name
-    pkg_name = 'pyclops_controller'
+    # pkg_name = 'pyclops_controller'
+
+    ld = LaunchDescription()
     
-    # Declare arguments
-    world_arg = DeclareLaunchArgument(
-        'world',
-        default_value='empty.sdf',
-        description='Gazebo world file'
+    # Start Publishing Robot State
+    rsp = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory('pyclops_launch'),'launch','rsp.launch.py'
+                    )])
+            )
+    ld.add_action(rsp)
+
+    teleop_node = Node(
+        package='teleop_twist_keyboard',
+        executable='teleop_twist_keyboard',
+        prefix='xterm -e',  # Opens in new terminal window
+        parameters=[{'use_sim_time': True}]
     )
-    
-    use_sim_time_arg = DeclareLaunchArgument(
-        'use_sim_time',
-        default_value='true',
-        description='Use simulation time'
+    ld.add_action(teleop_node)
+
+    ik_node = Node(
+        package='pyclops_controller',
+        executable='ik_node',
+        output='screen',
+        parameters=[{'use_sim_time': True}]
     )
-    
-    # Paths
-    pkg_share = FindPackageShare(pkg_name)
-    urdf_file = PathJoinSubstitution([pkg_share, 'urdf', 'pyclops.urdf'])
-    
-    # Gazebo launch
+    ld.add_action(ik_node)
+
+    diff_drive_controller = Node(
+        package='pyclops_controller',
+        executable='drive_node',
+        output='screen',
+        parameters=[{'use_sim_time': True}]
+    )
+    ld.add_action(diff_drive_controller)
+
+    # Initialize Environment
     gazebo = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([
-            PathJoinSubstitution([
-                FindPackageShare('ros_gz_sim'),
-                'launch',
-                'gz_sim.launch.py'
-            ])
-        ]),
-        launch_arguments={
-            'gz_args': ['-r -v4 ', LaunchConfiguration('world')],
-        }.items()
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py'
+        )]),
+        launch_arguments={'gz_args': '-r -v4 empty.sdf'}.items()
     )
-    
-    # Spawn robot
-    spawn_robot = Node(
+    ld.add_action(gazebo)
+
+    # Spawn in Robot
+    spawn_entity = Node(
         package='ros_gz_sim',
         executable='create',
         arguments=[
@@ -52,41 +64,28 @@ def generate_launch_description():
             '-name', 'pyclops',
             '-x', '0.0',
             '-y', '0.0',
-            '-z', '0.1'
+            '-z', '0.1',
         ],
         output='screen'
     )
-    
-    # Robot state publisher
-    robot_state_publisher = Node(
-        package='robot_state_publisher',
-        executable='robot_state_publisher',
-        name='robot_state_publisher',
-        output='screen',
-        parameters=[{
-            'use_sim_time': LaunchConfiguration('use_sim_time'),
-            'robot_description': open(urdf_file.perform(None)).read()
-        }]
-    )
-    
-    # Bridge multiple topics with a single node
+    ld.add_action(spawn_entity)
+
+    # Enable ROS2<-->Gazebo Topic Bridge
     bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=[
             '/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist',
-            '/odom@nav_msgs/msg/Odometry@gz.msgs.Odometry',
-            '/tf@tf2_msgs/msg/TFMessage@gz.msgs.Pose_V',
+            '/model/pyclops/joint/left_wheel_joint/cmd_vel@std_msgs/msg/Float64@gz.msgs.Double',
+            '/model/pyclops/joint/right_wheel_joint/cmd_vel@std_msgs/msg/Float64@gz.msgs.Double',
+            '/joint_states@sensor_msgs/msg/JointState@gz.msgs.Model',
             '/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock'
-        ],
+            ],
         output='screen'
     )
-    
-    return LaunchDescription([
-        world_arg,
-        use_sim_time_arg,
-        gazebo,
-        robot_state_publisher,
-        spawn_robot,
-        bridge,
-    ])
+    ld.add_action(bridge)
+
+    return ld
+
+
+

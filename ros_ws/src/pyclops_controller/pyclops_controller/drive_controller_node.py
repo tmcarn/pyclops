@@ -14,10 +14,8 @@ class DiffDriveController(Node):
     def __init__(self):
         super().__init__("diff_drive_controller")
 
-        self.WHEEL_RADIUS = 0.0375
+        self.WHEEL_RADIUS = 0.3
         self.TRACK_WIDTH = 0.1
-
-        self.TORQUE_SCALE = 0.5 # TODO: Update dynamics when adding in motor controller
 
         # State Variables
         self.T = np.eye(3)
@@ -43,12 +41,12 @@ class DiffDriveController(Node):
         self.create_subscription(Float32MultiArray, '/cmd_wheel_vel', self.cmd_wheel_vel_callback, 1)
         self.create_subscription(JointState, '/joint_states', self.joint_states_callback, 1)
 
-        self.left_cmd_vel_publisher = self.create_publisher(Float64, '/model/pyclops_robot/joint/left_wheel_joint/cmd_vel', 1)
-        self.right_cmd_vel_publisher = self.create_publisher(Float64, '/model/pyclops_robot/joint/right_wheel_joint/cmd_vel', 1)
+        self.left_cmd_vel_publisher = self.create_publisher(Float64, '/model/pyclops/joint/left_wheel_joint/cmd_vel', 1)
+        self.right_cmd_vel_publisher = self.create_publisher(Float64, '/model/pyclops/joint/right_wheel_joint/cmd_vel', 1)
         
         self.tf_broadcaster = TransformBroadcaster(self)
 
-        self.create_timer(0.1, self.publish_cmd_wheel_vel)
+        # self.create_timer(0.1, self.publish_cmd_wheel_vel)
 
 
     def compute_twist(self):
@@ -68,6 +66,14 @@ class DiffDriveController(Node):
     def cmd_wheel_vel_callback(self, msg:Float32MultiArray):
         self.left_cmd_vel = msg.data[0]
         self.right_cmd_vel = msg.data[1]
+
+        left_msg = Float64()
+        left_msg.data = self.left_cmd_vel
+        self.left_cmd_vel_publisher.publish(left_msg)
+        
+        right_msg = Float64()
+        right_msg.data = self.right_cmd_vel
+        self.right_cmd_vel_publisher.publish(right_msg)
         
     def publish_cmd_wheel_vel(self):
         # Publish cmd_wheel_vels

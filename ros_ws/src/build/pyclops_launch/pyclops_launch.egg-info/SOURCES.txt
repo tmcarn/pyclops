@@ -2,6 +2,7 @@ package.xml
 setup.cfg
 setup.py
 launch/pyclops.launch.py
+launch/rsp.launch.py
 pyclops_launch/__init__.py
 pyclops_launch.egg-info/PKG-INFO
 pyclops_launch.egg-info/SOURCES.txt
